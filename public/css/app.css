@@ -28,11 +28,6 @@
   color: #fff;
   font-size: 0.8em;
 }
-body {
-  font-family: arial;
-  font-size: 16px;
-  margin: 0;
-}
 .layout {
   display: -webkit-box;
   display: -moz-box;
@@ -203,4 +198,9 @@ body {
 }
 .Battle-player > div {
   margin: 10px;
+}
+body {
+  font-family: arial;
+  font-size: 16px;
+  margin: 0;
 }
