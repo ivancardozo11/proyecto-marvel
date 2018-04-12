@@ -16,11 +16,11 @@ body
           div(class="layout-battle")
                 div(class="Battle")
                     div(class="Battle-antagonist")
-                each card in [1,2,3,4,5]
-                    include ./card/template.jade
+                        each card in [1,2,3,4,5]
+                          include ./card/template.jade
                     div(class="Battle-player")
-                each card in [1,2,3,4,5]
-                    include ./card/template.jade
+                      each card in [1,2,3,4,5]
+                          include ./card/template.jade
           div(class="layout-phases")
               - text = "OMG el ataque fue muy fuerte , le quitaste 300 puntos¡¡¡"
               include ./phases/template.jade
