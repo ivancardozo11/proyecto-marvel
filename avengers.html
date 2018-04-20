@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es"></html>
+<head>
+  <meta charset="UTF-8">
+  <title>Marvel Game Card</title>
+  <link rel="stylesheet" href="./public/css/app.css">
+</head>
+<body>
+  <section class="layout">
+    <section class="layout-main">
+      <div class="layout-status"></div>
+      <div class="layout-battle">
+        <div class="Battle">
+          <div class="Battle-antagonist"></div>
+          <div class="Battle-player">
+            <div class="card">
+              <h2 class="card-name">Wolverine</h2><img src="./public/images/wolverine.jpg" alt="wolverine" class="card-image">
+              <div class="card-description">Wolverine es muy poderoso</div>
+              <div class="card-attack">Son 500 puntos de ataque</div>
+            </div>
+            <div class="card">
+              <h2 class="card-name">Wolverine</h2><img src="./public/images/wolverine.jpg" alt="wolverine" class="card-image">
+              <div class="card-description">Wolverine es muy poderoso</div>
+              <div class="card-attack">Son 500 puntos de ataque</div>
+            </div>
+            <div class="card">
+              <h2 class="card-name">Wolverine</h2><img src="./public/images/wolverine.jpg" alt="wolverine" class="card-image">
+              <div class="card-description">Wolverine es muy poderoso</div>
+              <div class="card-attack">Son 500 puntos de ataque</div>
+            </div>
+            <div class="card">
+              <h2 class="card-name">Wolverine</h2><img src="./public/images/wolverine.jpg" alt="wolverine" class="card-image">
+              <div class="card-description">Wolverine es muy poderoso</div>
+              <div class="card-attack">Son 500 puntos de ataque</div>
+            </div>
+            <div class="card">
+              <h2 class="card-name">Wolverine</h2><img src="./public/images/wolverine.jpg" alt="wolverine" class="card-image">
+              <div class="card-description">Wolverine es muy poderoso</div>
+              <div class="card-attack">Son 500 puntos de ataque</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="lib/util/marvel-api.js"></script>
+  <script src="lib/app.js"></script>
+</body>
+<!--jade -o ../ -w -P avengers.jade-->
+<!-- stylus -u nib  -w -o ../public/css/ app.styl-->
+<!--corre en servidor local python -m http.server y luego buscar en local-->
+<!-- host:8000/avengers.html-->
