@@ -1,25 +1,33 @@
-# platzifrontend-marvel
+# proyecto-marvel
 
-Este es el código que se ha hecho durante las clases en vivo del curso de **#PlatziFrontend**, si quieres ver el curso completo puedes ir a [#platziFronted](http://www.platzi.com/frontend).
+Proyecto de prueba , usando Api de de developer.marvel.com 
 
 ## Requisitos
 
 [`npm`](http://npmjs.org)
+babel
+gulp
+stylus
+browserify
+jQuery 2x
+jade.
+nib
+
 
 ## Instalación
 ```
-npm install
+npm install i
 gulp build
-```
+``
 
 ## Ejecutar
 ```
-npm run jade
-npm run serve
+npm run jade(jade -o ../ -w -P avengers.jade correr el comando posicionandoce en la carpeta lib.)
+
+stylus.
+(correr el comando en la consola
+stylus -u nib  -w -o ../public/css/ app.styl correr el comando posicionandoce en la carpeta lib .)
+
+npm run serve(correr comando python -m http.server) 
 ```
 
-## scripts de package.json
-
-* `clean`: elimina el directorio `node_modules`
-* `jade`: Solo usalo una vez para compilar el layout donde cargaras el js de la apliacación
-* `serve`: corre un servidor web básico para servir la aplicación
