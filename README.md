@@ -8,7 +8,7 @@ Proyecto de prueba , usando Api de de developer.marvel.com
 ```
 babel ,
 gulp,
-styls,
+stylus,
 browseify,
 jQuery 2x,
 jade,
