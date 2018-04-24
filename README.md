@@ -9,7 +9,7 @@ Proyecto de prueba , usando Api de de developer.marvel.com
 babel ,
 gulp,
 stylus,
-browseify,
+browserify,
 jQuery 2x,
 jade,
 nib.
