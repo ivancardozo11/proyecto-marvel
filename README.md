@@ -5,14 +5,15 @@ Proyecto de prueba , usando Api de de developer.marvel.com
 ## Requisitos
 
 [`npm`](http://npmjs.org)
-babel
-gulp
-stylus
-browserify
-jQuery 2x
-jade.
-nib
-
+```
+babel ,
+gulp,
+styls,
+browseify,
+jQuery 2x,
+jade,
+nib.
+```
 
 ## Instalación
 ```
