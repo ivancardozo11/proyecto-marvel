@@ -1,41 +1,88 @@
-.card {
+.Card {
   width: 170px;
   background: #c2ac37;
   border: 5px solid #000;
-  -webkit-box-shadow: 0 0 10px #000;
-  box-shadow: 0 0 10px #000;
+  -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
   border-radius: 0.5em;
   padding: 0.5em;
+  position: relative;
 }
-.card-description {
+.Card--antagonist .Card-container {
+  background: #f00;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+.Card--antagonist .Card-backface {
+  -webkit-transform: rotateY(0);
+  -moz-transform: rotateY(0);
+  -o-transform: rotateY(0);
+  -ms-transform: rotateY(0);
+  transform: rotateY(0);
+}
+.Card-backface {
+  background-image: url("../images/logo.jpg");
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: #d8232a;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+.Card-description {
   background: #fff;
   padding: 0.5em;
   font-size: 12px;
   margin-bottom: 0.5em;
   border: 2px solid #000;
 }
-.card-name {
+.Card-name {
   color: #fff;
   text-transform: uppercase;
-  margin: 0 0 0 0;
+  margin: 0 0 0.5em 0;
   font-size: 1em;
+  white-space: nowrap;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
 }
-.card-image {
+.Card-image {
   width: 100%;
 }
-.card-attack {
+.Card-attack {
   background: #000;
   color: #fff;
-  font-size: 0.8em;
+  font-size: 0.7em;
 }
-.layout {
+.Layout {
   display: -webkit-box;
   display: -moz-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: box;
   display: flex;
-  padding: 0.5px;
+  padding: 0.5em;
   margin: 0.5em;
   border: 1px solid #a52a2a;
   -webkit-box-sizing: border-box;
@@ -59,10 +106,10 @@
   -moz-background-size: cover;
   background-size: cover;
 }
-.layout > section {
+.Layout > section {
   margin: 0.5em;
 }
-.layout-main {
+.Layout-main {
   display: -webkit-box;
   display: -moz-box;
   display: -webkit-flex;
@@ -76,14 +123,14 @@
   -webkit-justify-content: space-between;
   justify-content: space-between;
 }
-.layout-status {
+.Layout-status {
   border: 1px solid #008000;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   width: 200px;
 }
-.layout-battle {
+.Layout-battle {
   border: 1px solid #ffa500;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -98,7 +145,7 @@
   margin: 0 0.5em;
   background-image: url("../images/pattern.jpg");
 }
-.layout-phases {
+.Layout-phases {
   border: 1px solid #800080;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -106,7 +153,7 @@
   width: 200px;
   position: relative;
 }
-.layout-angonist {
+.Layout-antagonist {
   border: 1px solid #7fffd4;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -124,7 +171,7 @@
   -webkit-justify-content: space-between;
   justify-content: space-between;
 }
-.layout-player {
+.Layout-player {
   border: 1px solid #808080;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -156,7 +203,7 @@
   padding: 0.5em;
   margin: 0;
 }
-.phases {
+.Phases {
   background: #fff;
   border: 5px dashed #f00;
   position: absolute;
@@ -200,7 +247,10 @@
   margin: 10px;
 }
 body {
-  font-family: arial;
+  font-family: Arial;
   font-size: 16px;
   margin: 0;
+}
+.hide {
+  display: none;
 }

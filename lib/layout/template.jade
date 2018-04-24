@@ -1,17 +1,19 @@
-section(class="layout")
-    section(class="layout-angonist")
-      each card in [1,2,3,4,5]
-          include ../card/template.jade
-    section(class="layout-main")
-      div(class="layout-status")
-        each name in ["Jeduan", "Leonidas"]
+section(class="Layout")
+    section(class="Layout-antagonist")
+        - clase = "Card--antagonist"
+        each card in [1,2,3,4,5]
+            include ../card/template.jade
+    section(class="Layout-main")
+        div(class="Layout-status")
+            each name in ["Jeduan", "Leonidas"]
                 include ../status/template.jade
-      div(class="layout-battle")
-        include ../battle/template.jade
-      div(class="layout-phases")
-          - text = "OMG el ataque fue muy fuerte , le quitaste 300 puntos¡¡¡"
-          include ../phases/template.jade
 
-    section(class="layout-player")
-      each card in [1,2,3,4,5]
-          include ../card/template.jade
+        div(class="Layout-battle")
+            include ../battle/template.jade
+        div(class="Layout-phases")
+            - text = "OMG ese ataque fue muy fuerte, le quitaste 300 puntos."
+            include ../phases/template.jade
+    section(class="Layout-player")
+        each card in [1,2,3,4,5]
+            - clase = "Card--player"
+            include ../card/template.jade

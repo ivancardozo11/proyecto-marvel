@@ -1,25 +1,23 @@
 doctype html
 html(lang="es")
-head
+  head
     meta(charset="UTF-8")
     title Marvel Game Card
     link(rel="stylesheet", href="./public/css/app.css")
-body
- section.layout
-   section.layout-main
-     .layout-status
-     .layout-battle
-      .Battle
-       - clase =""
-         .Battle-antagonist
-         .Battle-player
-           each card in [1,2,3,4,5]
-            include card/template.jade
- script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js")
- script(src ="public/util/marvel-api.js")
- script(src="public/app.js")
+  body
+    section.Layout
+      section.Layout-main
+        .Layout-status
+          form.CharacterForm
+            input.CharacterForm-name(type="text", placeholder="Agrega un personaje")
+            button Agregar
+          span.CharacterForm-message
 
-//jade -o ../ -w -P avengers.jade
-// stylus -u nib  -w -o ../public/css/ app.styl
-//corre en servidor local python -m http.server y luego buscar en local
-// host:8000/avengers.html
+        .Layout-battle
+          .Battle
+            - clase = ""
+            .Battle-antagonist
+            .Battle-player
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js")
+    script(src="public/util/marvel-api.js")
+    script(src="public/util/avengers.js")
