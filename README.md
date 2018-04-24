@@ -1,6 +1,6 @@
 # proyecto-marvel
 
-https://ivancardozo11.github.io/proyecto-marvel/
+https://ivancardozo11.github.io/proyecto-marvel/avengers.html
 
 Proyecto de prueba , usando Api de de developer.marvel.com 
 
