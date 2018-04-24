@@ -22,6 +22,8 @@ gulp build
 
 ## Ejecutar
 ```
+
+```
 npm run jade(jade -o ../ -w -P avengers.jade correr el comando posicionandoce en la carpeta lib.)
 
 stylus.
@@ -30,4 +32,9 @@ stylus -u nib  -w -o ../public/css/ app.styl correr el comando posicionandoce en
 
 npm run serve(correr comando python -m http.server) 
 ```
+
+```
+Para que el proyecto corra correctamente debe estár agregada una url en la pagina de developer.marvel.com , crear una cuesta y agregar la url en "My developer account."
+
+````
 
