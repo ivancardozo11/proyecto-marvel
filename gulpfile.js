@@ -11,6 +11,9 @@ var nib = require('nib')
 
 var minify = require('gulp-minify-css')
 var uglify = require('gulp-uglify')
+// var uglify = require('gulp-prettify')
+
+
 
 gulp.task('build', ['styl', 'js'])
 

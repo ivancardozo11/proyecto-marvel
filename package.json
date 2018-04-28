@@ -1,9 +1,15 @@
 {
   "dependencies": {
     "build": "^0.1.4",
+    "express": "^4.16.3",
+    "gulp-prettify": "^0.5.0",
+    "i": "^0.3.6",
     "jade": "^1.11.0",
     "jquery": "2.1.4",
-    "page": "1.6.3"
+    "page": "1.6.3",
+    "prettify": "^0.1.7",
+    "socket.io": "^2.1.0",
+    "socket.io-client": "^2.1.0"
   },
   "devDependencies": {
     "babelify": "6.1.2",
