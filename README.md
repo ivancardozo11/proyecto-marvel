@@ -2,8 +2,8 @@
 
 https://ivancardozo11.github.io/proyecto-marvel/avengers.html
 
-Proyecto de prueba , usando Api de de developer.marvel.com 
-
+El proyecto marvel es una SPA que utiliza la API de developer.marvel.com para la creacion de un sitio web de prueba .
+Entre las tecnologias que maneja se observan web sockets para el chat, tareas con gulp, Json ,prepocesadores como Jade para el html y stylus para el css.
 ## Requisitos
 
 [`npm`](http://npmjs.org)
